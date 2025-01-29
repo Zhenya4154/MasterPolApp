@@ -1,0 +1,16 @@
+C:\Users\lisav\source\repos\MasterPolApp\bin\Debug\MasterPolApp.exe.config
+C:\Users\lisav\source\repos\MasterPolApp\bin\Debug\MasterPolApp.exe
+C:\Users\lisav\source\repos\MasterPolApp\bin\Debug\MasterPolApp.pdb
+C:\Users\lisav\source\repos\MasterPolApp\obj\Debug\MasterPolApp.csproj.AssemblyReference.cache
+C:\Users\lisav\source\repos\MasterPolApp\obj\Debug\MainWindow.g.cs
+C:\Users\lisav\source\repos\MasterPolApp\obj\Debug\App.g.cs
+C:\Users\lisav\source\repos\MasterPolApp\obj\Debug\MasterPolApp_MarkupCompile.cache
+C:\Users\lisav\source\repos\MasterPolApp\obj\Debug\MasterPolApp_MarkupCompile.lref
+C:\Users\lisav\source\repos\MasterPolApp\obj\Debug\App.baml
+C:\Users\lisav\source\repos\MasterPolApp\obj\Debug\MainWindow.baml
+C:\Users\lisav\source\repos\MasterPolApp\obj\Debug\MasterPolApp.g.resources
+C:\Users\lisav\source\repos\MasterPolApp\obj\Debug\MasterPolApp.Properties.Resources.resources
+C:\Users\lisav\source\repos\MasterPolApp\obj\Debug\MasterPolApp.csproj.GenerateResource.cache
+C:\Users\lisav\source\repos\MasterPolApp\obj\Debug\MasterPolApp.csproj.CoreCompileInputs.cache
+C:\Users\lisav\source\repos\MasterPolApp\obj\Debug\MasterPolApp.exe
+C:\Users\lisav\source\repos\MasterPolApp\obj\Debug\MasterPolApp.pdb
