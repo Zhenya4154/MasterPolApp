@@ -23,5 +23,6 @@
                    VerticalAlignment="Center"
                    Margin="300,0,0,0"></Image>
         </Grid>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Row="1"></Frame>
     </Grid>
 </Window>
