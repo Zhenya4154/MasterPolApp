@@ -64,3 +64,5 @@ C:\Users\zheny\OneDrive\Desktop\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp
 C:\Users\zheny\OneDrive\Desktop\MasterPolApp\MasterPolApp\obj\Debug\MasterPo.FF4A49A3.Up2Date
 C:\Users\zheny\OneDrive\Desktop\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.exe
 C:\Users\zheny\OneDrive\Desktop\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.pdb
+C:\Users\lisav\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Pages\AddEditPage.g.cs
+C:\Users\lisav\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Pages\AddEditPage.baml

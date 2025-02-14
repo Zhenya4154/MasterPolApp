@@ -29,7 +29,11 @@ namespace MasterPolApp.Data
             }
             return _context;
         }
-       
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            throw new UnintentionalCodeFirstException();
+        }
     
         public virtual DbSet<Address> Address { get; set; }
         public virtual DbSet<MaterialTypeImport> MaterialTypeImport { get; set; }

@@ -44,6 +44,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button x:Name="AddButton" Click="AddButton_Click" Content="Доюавить партнера" Grid.Row="1"></Button>
+        <Button x:Name="AddButton" Click="AddButton_Click" Content="Добавить партнера" Grid.Row="1"></Button>
     </Grid>
 </Page>
