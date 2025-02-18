@@ -43,12 +43,12 @@ namespace MasterPolApp.Pages
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            Classes.Manager.MainFrame.Navigate(new Pages.AddEditPage());
+            Classes.Manager.MainFrame.Navigate(new Pages.AddEditPage(null));
         }
 
         private void EditButton_Click(object sender, RoutedEventArgs e)
         {
-            Classes.Manager.MainFrame.Navigate(new Pages.AddEditPage());
+            Classes.Manager.MainFrame.Navigate(new Pages.AddEditPage((sender as Button).DataContext as Data.PartnerImport));
         }
 
         private void DataGridButton_Click(object sender, RoutedEventArgs e)
@@ -77,7 +77,8 @@ namespace MasterPolApp.Pages
                 NamePartner = partner.NamePartner,            
                 TypePartner = partner.TypePartner.Type,       
                 NameDirector = partner.NameDirector.Director, 
-                NumberPhone = partner.NumberPhone,  
+                NumberPhone = partner.NumberPhone,
+                Rating = partner.Rating,
                 TotalSales = salesGroup.FirstOrDefault().TotalSales,
                 Discount = CalculateDiscount(salesGroup.FirstOrDefault().TotalSales)}).ToList();
 
