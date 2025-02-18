@@ -67,6 +67,7 @@
     <Property Name="IdAddress" Type="int" />
     <Property Name="INN" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Rating" Type="int" Nullable="false" />
+    <Property Name="Discount" Type="int" />
   </EntityType>
   <EntityType Name="PartnerProductImport">
     <Key>

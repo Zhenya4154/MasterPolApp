@@ -66,3 +66,5 @@ C:\Users\zheny\OneDrive\Desktop\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp
 C:\Users\zheny\OneDrive\Desktop\MasterPolApp\MasterPolApp\obj\Debug\MasterPolApp.pdb
 C:\Users\lisav\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Pages\AddEditPage.g.cs
 C:\Users\lisav\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Pages\AddEditPage.baml
+C:\Users\zheny\OneDrive\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Pages\AddEditPage.g.cs
+C:\Users\zheny\OneDrive\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Pages\AddEditPage.baml

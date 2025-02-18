@@ -20,25 +20,11 @@ namespace MasterPolApp.Pages
     /// </summary>
     public partial class ListViewPage : Page
     {
+
         public ListViewPage()
         {
             InitializeComponent();
             LoadData();
-        }
-
-        public class PartnerViewModel
-        {
-            public int PartnerId { get; set; }
-            public string NamePartner { get; set; } 
-            public string TypePartner { get; set; } 
-            public string NameDirector { get; set; } 
-            public string NumberPhone { get; set; } 
-            public decimal TotalSales { get; set; } 
-            public int Discount { get; set; }
-
-            public int Rating { get; set; }
-
-            public string DiscountWithPercent => $"{Discount}%";
         }
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
@@ -57,33 +43,28 @@ namespace MasterPolApp.Pages
         }
         private void LoadData()
         {
-                           
-           var salesData = Data.DatabaseMasterPolEntities.GetContext().PartnerProductImport
-              .GroupBy(s => s.IdNamePartner)
-              .Select(group => new
-               {
-                 PartnerId = group.Key,                  
-                 TotalSales = group.Sum(s => s.QuantityProduct) }).ToList();
-               
-           var partnerData = Data.DatabaseMasterPolEntities.GetContext().PartnerImport
-             .ToList()
-             .GroupJoin(
-             salesData,                              
-             partner => partner.Id,      
-             sales => sales.PartnerId,
-             (partner, salesGroup) => new PartnerViewModel
-              {
-                PartnerId = partner.Id,
-                NamePartner = partner.NamePartner,            
-                TypePartner = partner.TypePartner.Type,       
-                NameDirector = partner.NameDirector.Director, 
-                NumberPhone = partner.NumberPhone,
-                Rating = partner.Rating,
-                TotalSales = salesGroup.FirstOrDefault().TotalSales,
-                Discount = CalculateDiscount(salesGroup.FirstOrDefault().TotalSales)}).ToList();
+            var context = Data.DatabaseMasterPolEntities.GetContext();
 
-                PartnerListView.ItemsSource = partnerData;
-            
+            var partners = context.PartnerImport.ToList(); // Загружаем всех партнеров
+
+            foreach (var partner in partners)
+            {
+                var totalSales = context.PartnerProductImport
+                    .Where(p => p.IdNamePartner == partner.Id)
+                    .Sum(p => (decimal)p.QuantityProduct);
+
+                int newDiscount = CalculateDiscount(totalSales);
+
+                if (partner.Discount != newDiscount) // Обновляем только если изменилось
+                {
+                    partner.Discount = newDiscount;
+                }
+            }
+
+            context.SaveChanges(); // Сохраняем обновленные скидки в БД
+
+            PartnerListView.ItemsSource = partners;
+
         }
 
         private static int CalculateDiscount(decimal totalSales)

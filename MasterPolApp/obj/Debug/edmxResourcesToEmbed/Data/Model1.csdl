@@ -77,6 +77,7 @@
     <Property Name="IdAddress" Type="Int32" />
     <Property Name="INN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Rating" Type="Int32" Nullable="false" />
+    <Property Name="Discount" Type="Int32" />
     <NavigationProperty Name="Address" Relationship="Self.FK_PartnerImport_Address" FromRole="PartnerImport" ToRole="Address" />
     <NavigationProperty Name="NameDirector" Relationship="Self.FK_PartnerImport_NameDirector" FromRole="PartnerImport" ToRole="NameDirector" />
     <NavigationProperty Name="TypePartner" Relationship="Self.FK_PartnerImport_TypePartner" FromRole="PartnerImport" ToRole="TypePartner" />

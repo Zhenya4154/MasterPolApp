@@ -74,6 +74,7 @@
           <ScalarProperty Name="IdAddress" ColumnName="IdAddress" />
           <ScalarProperty Name="INN" ColumnName="INN" />
           <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

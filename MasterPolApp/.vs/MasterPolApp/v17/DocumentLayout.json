@@ -1,12 +1,103 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|c:\\users\\zheny\\onedrive\\desktop\\masterpolapp\\masterpolapp\\pages\\addeditpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|solutionrelative:pages\\addeditpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|c:\\users\\zheny\\onedrive\\desktop\\masterpolapp\\masterpolapp\\pages\\addeditpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|solutionrelative:pages\\addeditpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|c:\\users\\zheny\\onedrive\\desktop\\masterpolapp\\masterpolapp\\pages\\listviewpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|solutionrelative:pages\\listviewpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|c:\\users\\zheny\\onedrive\\desktop\\masterpolapp\\masterpolapp\\pages\\listviewpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|solutionrelative:pages\\listviewpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|c:\\users\\zheny\\onedrive\\desktop\\masterpolapp\\masterpolapp\\classes\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|solutionrelative:classes\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Classes\\Manager.cs",
+              "RelativeDocumentMoniker": "Classes\\Manager.cs",
+              "ToolTip": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Classes\\Manager.cs",
+              "RelativeToolTip": "Classes\\Manager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T19:15:07.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ListViewPage.xaml",
+              "DocumentMoniker": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\ListViewPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\ListViewPage.xaml",
+              "ToolTip": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\ListViewPage.xaml",
+              "RelativeToolTip": "Pages\\ListViewPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-18T16:30:17.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddEditPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\AddEditPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AddEditPage.xaml.cs",
+              "ToolTip": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\AddEditPage.xaml.cs",
+              "RelativeToolTip": "Pages\\AddEditPage.xaml.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T16:24:10.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddEditPage.xaml",
+              "DocumentMoniker": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\AddEditPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\AddEditPage.xaml",
+              "ToolTip": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\AddEditPage.xaml",
+              "RelativeToolTip": "Pages\\AddEditPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-18T16:24:09.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ListViewPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\ListViewPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\ListViewPage.xaml.cs",
+              "ToolTip": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\ListViewPage.xaml.cs",
+              "RelativeToolTip": "Pages\\ListViewPage.xaml.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAWwDYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T16:11:33.594Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

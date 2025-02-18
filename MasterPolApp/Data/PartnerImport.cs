@@ -29,6 +29,7 @@ namespace MasterPolApp.Data
         public Nullable<int> IdAddress { get; set; }
         public string INN { get; set; }
         public int Rating { get; set; }
+        public Nullable<int> Discount { get; set; }
     
         public virtual Address Address { get; set; }
         public virtual NameDirector NameDirector { get; set; }

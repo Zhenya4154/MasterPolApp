@@ -66,7 +66,10 @@ namespace MasterPolApp.Pages
                     RetingTextBox.Text = CurrentProduct.Rating.ToString();
                     NameDirectorTextBox.Text = CurrentProduct.NameDirector.Director;
                     NumberPhoneTextBox.Text = CurrentProduct.NumberPhone;
-                    
+                    EmailTextBox.Text = CurrentProduct.Email;
+                    AddressTextBox.Text = $"{CurrentProduct.Address.NumberIndex.NameIndex}, {CurrentProduct.Address.NameStreet.Street}, {CurrentProduct.Address.NameCity.City}, {CurrentProduct.Address.NameArea.Area}, {CurrentProduct.Address.Home}";
+
+
                 }
             }
             catch
