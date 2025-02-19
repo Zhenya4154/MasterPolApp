@@ -24,12 +24,24 @@
             <Label Content="Рейтинг:" FontSize="20"></Label>
             <TextBox x:Name="RetingTextBox" HorizontalContentAlignment="Center"
                      VerticalContentAlignment="Center"></TextBox>
-            <Label Content="Адрес:" FontSize="20"></Label>
-            <TextBox x:Name="AddressTextBox" HorizontalContentAlignment="Center"
+            <Label Content="Индекс:" FontSize="20"></Label>
+            <TextBox x:Name="IndexTextBox" HorizontalContentAlignment="Center"
                      VerticalContentAlignment="Center" ></TextBox>
+            <Label Content="Область:" FontSize="20"></Label>
+            <TextBox x:Name="AreaTextBox" HorizontalContentAlignment="Center"
+                     VerticalContentAlignment="Center"></TextBox>
+            <Label Content="Город:" FontSize="20"></Label>
+            <TextBox x:Name="CityTextBox" HorizontalContentAlignment="Center"
+                     VerticalContentAlignment="Center"></TextBox>
         </StackPanel>
         <StackPanel Grid.Column="2" HorizontalAlignment="Center"
                     VerticalAlignment="Center">
+            <Label Content="Улица:" FontSize="20"></Label>
+            <TextBox x:Name="StreetTextBox" HorizontalContentAlignment="Center"
+                     VerticalContentAlignment="Center"></TextBox>
+            <Label Content="Дом:" FontSize="20"></Label>
+            <TextBox x:Name="HousTextBox" HorizontalContentAlignment="Center"
+                     VerticalContentAlignment="Center"></TextBox>
             <Label Content="ФИО Директора:" FontSize="20"></Label>
             <TextBox x:Name="NameDirectorTextBox" HorizontalContentAlignment="Center"
                      VerticalContentAlignment="Center"></TextBox>
@@ -39,10 +51,13 @@
             <Label Content="Почта:" FontSize="20"></Label>
             <TextBox x:Name="EmailTextBox" HorizontalContentAlignment="Center"
                      VerticalContentAlignment="Center"></TextBox>
-            <Button x:Name="AddButton" Click="AddButton_Click" Content="Сохранить"
-                    Margin="10"></Button>
-            <Button x:Name="BackButton" Click="BackButton_Click" Content="Назад"></Button>
+
         </StackPanel>
+        <Button x:Name="AddButton" Click="AddButton_Click" Content="Сохранить" HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                Grid.Column="1"
+                    Margin="10"></Button>
+        <Button x:Name="BackButton" Click="BackButton_Click" Content="Назад" HorizontalAlignment="Left" VerticalAlignment="Bottom"
+                Margin="10"  Grid.Column="1"></Button>
     </Grid>
    
 </Page>

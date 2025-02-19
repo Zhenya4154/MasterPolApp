@@ -45,7 +45,7 @@ namespace MasterPolApp.Pages
         {
             var context = Data.DatabaseMasterPolEntities.GetContext();
 
-            var partners = context.PartnerImport.ToList(); // Загружаем всех партнеров
+            var partners = context.PartnerImport.ToList(); 
 
             foreach (var partner in partners)
             {
@@ -55,13 +55,13 @@ namespace MasterPolApp.Pages
 
                 int newDiscount = CalculateDiscount(totalSales);
 
-                if (partner.Discount != newDiscount) // Обновляем только если изменилось
+                if (partner.Discount != newDiscount) 
                 {
                     partner.Discount = newDiscount;
                 }
             }
 
-            context.SaveChanges(); // Сохраняем обновленные скидки в БД
+            context.SaveChanges();
 
             PartnerListView.ItemsSource = partners;
 

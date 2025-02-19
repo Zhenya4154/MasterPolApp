@@ -51,10 +51,14 @@ namespace MasterPolApp.Pages
                     NamePartnerTextBox.Text = string.Empty;
                     TypePartnerComboBox.SelectedItem = null;
                     RetingTextBox.Text = string.Empty;
-                    AddressTextBox.Text = string.Empty;
+                    IndexTextBox.Text = string.Empty;
                     NameDirectorTextBox.Text = string.Empty;
                     NumberPhoneTextBox.Text = string.Empty;
                     EmailTextBox.Text = string.Empty;
+                    AreaTextBox.Text = string.Empty;
+                    CityTextBox.Text = string.Empty;
+                    StreetTextBox.Text = string.Empty;
+                    HousTextBox.Text = string.Empty;
 
                 }
                 else if (FlagAddOrEdit == "edit")
@@ -67,8 +71,11 @@ namespace MasterPolApp.Pages
                     NameDirectorTextBox.Text = CurrentProduct.NameDirector.Director;
                     NumberPhoneTextBox.Text = CurrentProduct.NumberPhone;
                     EmailTextBox.Text = CurrentProduct.Email;
-                    AddressTextBox.Text = $"{CurrentProduct.Address.NumberIndex.NameIndex}, {CurrentProduct.Address.NameStreet.Street}, {CurrentProduct.Address.NameCity.City}, {CurrentProduct.Address.NameArea.Area}, {CurrentProduct.Address.Home}";
-
+                    IndexTextBox.Text = CurrentProduct.Address.NumberIndex.NameIndex.ToString();
+                    AreaTextBox.Text = CurrentProduct.Address.NameArea.Area;
+                    CityTextBox.Text = CurrentProduct.Address.NameCity.City;
+                    StreetTextBox.Text = CurrentProduct.Address.NameStreet.Street;
+                    HousTextBox.Text = CurrentProduct.Address.Home.ToString();
 
                 }
             }
@@ -107,11 +114,42 @@ namespace MasterPolApp.Pages
                 }
 
 
-                if (string.IsNullOrEmpty(AddressTextBox.Text))
+                if (string.IsNullOrEmpty(IndexTextBox.Text))
                 {
-                    errors.AppendLine("Введите адрес!");
+                    errors.AppendLine("Введите индекс!");
                 }
-                
+                else
+                {
+                    var countParse = Int32.TryParse(IndexTextBox.Text, out var result);
+                    if (!(countParse && result >= 0))
+                    {
+                        errors.AppendLine("К-во - целое и положительное");
+                    }
+                }
+                if (string.IsNullOrEmpty(CityTextBox.Text))
+                {
+                    errors.AppendLine("Введите город!");
+                }
+                if (string.IsNullOrEmpty(StreetTextBox.Text))
+                {
+                    errors.AppendLine("Введите улица!");
+                }
+                if (string.IsNullOrEmpty(AreaTextBox.Text))
+                {
+                    errors.AppendLine("Введите область!");
+                }
+                if (string.IsNullOrEmpty(HousTextBox.Text))
+                {
+                    errors.AppendLine("Введите дом!");
+                }
+                else
+                {
+                    var countParse = Int32.TryParse(HousTextBox.Text, out var result);
+                    if (!(countParse && result >= 0))
+                    {
+                        errors.AppendLine("К-во - целое и положительное");
+                    }
+                }
                 if (string.IsNullOrEmpty(NameDirectorTextBox.Text))
                 {
                     errors.AppendLine("Введите ФИО директора!");
@@ -129,6 +167,31 @@ namespace MasterPolApp.Pages
                 {
                     MessageBox.Show(errors.ToString(), "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
+                }
+
+                CurrentProduct.Email = EmailTextBox.Text;
+                CurrentProduct.NumberPhone = NumberPhoneTextBox.Text;
+                CurrentProduct.NameDirector.Director = NameDirectorTextBox.Text;
+                CurrentProduct.Rating = Convert.ToInt32(RetingTextBox.Text);
+                var selectType = TypePartnerComboBox.SelectedItem as Data.TypePartner;
+                CurrentProduct.IdTypePartner = selectType.Id;
+                CurrentProduct.NamePartner = NamePartnerTextBox.Text;
+                CurrentProduct.Address.NumberIndex.NameIndex= Convert.ToInt32(IndexTextBox.Text);
+                CurrentProduct.Address.NameArea.Area = AreaTextBox.Text;
+                CurrentProduct.Address.NameCity.City = CityTextBox.Text;
+                CurrentProduct.Address.NameStreet.Street = StreetTextBox.Text;
+                CurrentProduct.Address.Home = Convert.ToInt32(HousTextBox.Text);
+                if (FlagAddOrEdit == "add")
+                {
+                    Data.DatabaseMasterPolEntities.GetContext().PartnerImport.Add(CurrentProduct);
+                    Data.DatabaseMasterPolEntities.GetContext().SaveChanges();
+                    MessageBox.Show("Успешно добавлено!", "Успех!", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else if (FlagAddOrEdit == "edit")
+                {
+                    Data.DatabaseMasterPolEntities.GetContext().SaveChanges();
+                    MessageBox.Show("Успешно сохранено!", "Успех!", MessageBoxButton.OK, MessageBoxImage.Information);
+
                 }
             }
             catch
