@@ -169,18 +169,112 @@ namespace MasterPolApp.Pages
                     return;
                 }
 
+                var address = new Data.Address();
+                var IndexText = Convert.ToInt32(IndexTextBox.Text);
+
+                var searchStreet = (from item in Data.DatabaseMasterPolEntities.GetContext().NameStreet
+                                  where item.Street == StreetTextBox.Text
+                                  select item).FirstOrDefault();
+
+                if (searchStreet != null)
+                {
+                    address.IdStreet = searchStreet.Id;
+                }
+                else
+                {
+                    Data.NameStreet nameStreet = new Data.NameStreet()
+                    {
+                        Street = StreetTextBox.Text
+                    };
+                    Data.DatabaseMasterPolEntities.GetContext().NameStreet.Add(nameStreet);
+                    Data.DatabaseMasterPolEntities.GetContext().SaveChanges();
+                    address.IdStreet = nameStreet.Id;
+                }
+
+                var searchCity = (from item in Data.DatabaseMasterPolEntities.GetContext().NameCity
+                                  where item.City == CityTextBox.Text
+                                  select item).FirstOrDefault();
+
+                if (searchCity != null)
+                {
+                    address.IdCity = searchCity.Id;
+                }
+                else
+                {
+                    Data.NameCity nameCity = new Data.NameCity()
+                    {
+                        City = CityTextBox.Text
+                    };
+                    Data.DatabaseMasterPolEntities.GetContext().NameCity.Add(nameCity);
+                    Data.DatabaseMasterPolEntities.GetContext().SaveChanges();
+                    address.IdCity = nameCity.Id;
+                }
+
+                var searchArea = (from item in Data.DatabaseMasterPolEntities.GetContext().NameArea
+                                   where item.Area == AreaTextBox.Text
+                                   select item).FirstOrDefault();
+
+                if (searchArea != null)
+                {
+                    address.IdArea = searchArea.Id;
+                }
+                else
+                {
+                    Data.NameArea nameArea = new Data.NameArea()
+                    {
+                        Area = AreaTextBox.Text
+                    };
+                    Data.DatabaseMasterPolEntities.GetContext().NameArea.Add(nameArea);
+                    Data.DatabaseMasterPolEntities.GetContext().SaveChanges();
+                    address.IdArea = nameArea.Id;
+                }
+
+                var searchIndex = (from item in Data.DatabaseMasterPolEntities.GetContext().NumberIndex
+                                  where item.NameIndex == IndexText
+                                   select item).FirstOrDefault();
+
+                if (searchIndex != null)
+                {
+                    address.IdIndex = searchIndex.Id;
+                }
+                else
+                {
+                    Data.NumberIndex numberIndex = new Data.NumberIndex()
+                    {
+                        NameIndex = IndexText
+                    };
+                    Data.DatabaseMasterPolEntities.GetContext().NumberIndex.Add(numberIndex);
+                    Data.DatabaseMasterPolEntities.GetContext().SaveChanges();
+                    address.IdIndex = numberIndex.Id;
+                }
+
+                var searchName = (from item in Data.DatabaseMasterPolEntities.GetContext().NameDirector
+                                  where item.Director == NameDirectorTextBox.Text
+                                  select item).FirstOrDefault();
+
+                if (searchName != null)
+                {
+                    CurrentProduct.IdNameDirector = searchName.Id;
+                }
+                else
+                {
+                    Data.NameDirector directorName = new Data.NameDirector()
+                    {
+                        Director = NameDirectorTextBox.Text
+                    };
+                    Data.DatabaseMasterPolEntities.GetContext().NameDirector.Add(directorName);
+                    Data.DatabaseMasterPolEntities.GetContext().SaveChanges();
+                    CurrentProduct.IdNameDirector = directorName.Id;
+                }
+
                 CurrentProduct.Email = EmailTextBox.Text;
                 CurrentProduct.NumberPhone = NumberPhoneTextBox.Text;
-                CurrentProduct.NameDirector.Director = NameDirectorTextBox.Text;
                 CurrentProduct.Rating = Convert.ToInt32(RetingTextBox.Text);
                 var selectType = TypePartnerComboBox.SelectedItem as Data.TypePartner;
                 CurrentProduct.IdTypePartner = selectType.Id;
                 CurrentProduct.NamePartner = NamePartnerTextBox.Text;
-                CurrentProduct.Address.NumberIndex.NameIndex= Convert.ToInt32(IndexTextBox.Text);
-                CurrentProduct.Address.NameArea.Area = AreaTextBox.Text;
-                CurrentProduct.Address.NameCity.City = CityTextBox.Text;
-                CurrentProduct.Address.NameStreet.Street = StreetTextBox.Text;
-                CurrentProduct.Address.Home = Convert.ToInt32(HousTextBox.Text);
+                address.Home = Convert.ToInt32(HousTextBox.Text);
+                CurrentProduct.IdAddress = address.Id;
                 if (FlagAddOrEdit == "add")
                 {
                     Data.DatabaseMasterPolEntities.GetContext().PartnerImport.Add(CurrentProduct);
@@ -194,9 +288,9 @@ namespace MasterPolApp.Pages
 
                 }
             }
-            catch
+            catch (Exception ex)
             {
-
+                MessageBox.Show(ex.ToString(), "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
             }
             }
 

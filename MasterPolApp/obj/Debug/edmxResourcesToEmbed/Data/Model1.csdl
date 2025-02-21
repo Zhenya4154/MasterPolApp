@@ -75,7 +75,7 @@
     <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="NumberPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="IdAddress" Type="Int32" />
-    <Property Name="INN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="INN" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Rating" Type="Int32" Nullable="false" />
     <Property Name="Discount" Type="Int32" />
     <NavigationProperty Name="Address" Relationship="Self.FK_PartnerImport_Address" FromRole="PartnerImport" ToRole="Address" />

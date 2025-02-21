@@ -51,7 +51,10 @@ namespace MasterPolApp.Pages
             {
                 var totalSales = context.PartnerProductImport
                     .Where(p => p.IdNamePartner == partner.Id)
-                    .Sum(p => (decimal)p.QuantityProduct);
+                    .Select(p => (decimal)p.QuantityProduct)
+                    .DefaultIfEmpty(0)
+                    .Sum();
+                    
 
                 int newDiscount = CalculateDiscount(totalSales);
 
