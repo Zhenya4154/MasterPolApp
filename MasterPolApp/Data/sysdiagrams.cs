@@ -12,14 +12,12 @@ namespace MasterPolApp.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class PartnerProductImport
+    public partial class sysdiagrams
     {
-        public int Id { get; set; }
-        public int IdProduct { get; set; }
-        public int IdNamePartner { get; set; }
-        public int QuantityProduct { get; set; }
-        public System.DateTime DateSale { get; set; }
-    
-        public virtual ProductImport ProductImport { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }

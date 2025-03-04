@@ -81,7 +81,6 @@
     <NavigationProperty Name="Address" Relationship="Self.FK_PartnerImport_Address" FromRole="PartnerImport" ToRole="Address" />
     <NavigationProperty Name="NameDirector" Relationship="Self.FK_PartnerImport_NameDirector" FromRole="PartnerImport" ToRole="NameDirector" />
     <NavigationProperty Name="TypePartner" Relationship="Self.FK_PartnerImport_TypePartner" FromRole="PartnerImport" ToRole="TypePartner" />
-    <NavigationProperty Name="PartnerProductImport" Relationship="Self.FK_PartnerProductImport_PartnerImport" FromRole="PartnerImport" ToRole="PartnerProductImport" />
   </EntityType>
   <EntityType Name="PartnerProductImport">
     <Key>
@@ -92,7 +91,6 @@
     <Property Name="IdNamePartner" Type="Int32" Nullable="false" />
     <Property Name="QuantityProduct" Type="Int32" Nullable="false" />
     <Property Name="DateSale" Type="DateTime" Nullable="false" Precision="0" />
-    <NavigationProperty Name="PartnerImport" Relationship="Self.FK_PartnerProductImport_PartnerImport" FromRole="PartnerProductImport" ToRole="PartnerImport" />
     <NavigationProperty Name="ProductImport" Relationship="Self.FK_PartnerProductImport_ProductImport" FromRole="PartnerProductImport" ToRole="ProductImport" />
   </EntityType>
   <EntityType Name="ProductImport">
@@ -115,6 +113,16 @@
     <Property Name="TypeProduct" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="ProductTypeCoef" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
     <NavigationProperty Name="ProductImport" Relationship="Self.FK_ProductImport_ProductTypeImport" FromRole="ProductTypeImport" ToRole="ProductImport" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
   </EntityType>
   <EntityType Name="TypePartner">
     <Key>
@@ -208,18 +216,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_PartnerProductImport_PartnerImport">
-    <End Role="PartnerImport" Type="Self.PartnerImport" Multiplicity="1" />
-    <End Role="PartnerProductImport" Type="Self.PartnerProductImport" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="PartnerImport">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="PartnerProductImport">
-        <PropertyRef Name="IdNamePartner" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_PartnerProductImport_ProductImport">
     <End Role="ProductImport" Type="Self.ProductImport" Multiplicity="1" />
     <End Role="PartnerProductImport" Type="Self.PartnerProductImport" Multiplicity="*" />
@@ -256,6 +252,7 @@
     <EntitySet Name="PartnerProductImport" EntityType="Self.PartnerProductImport" />
     <EntitySet Name="ProductImport" EntityType="Self.ProductImport" />
     <EntitySet Name="ProductTypeImport" EntityType="Self.ProductTypeImport" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
     <EntitySet Name="TypePartner" EntityType="Self.TypePartner" />
     <AssociationSet Name="FK_Address_NameArea" Association="Self.FK_Address_NameArea">
       <End Role="NameArea" EntitySet="NameArea" />
@@ -284,10 +281,6 @@
     <AssociationSet Name="FK_PartnerImport_TypePartner" Association="Self.FK_PartnerImport_TypePartner">
       <End Role="TypePartner" EntitySet="TypePartner" />
       <End Role="PartnerImport" EntitySet="PartnerImport" />
-    </AssociationSet>
-    <AssociationSet Name="FK_PartnerProductImport_PartnerImport" Association="Self.FK_PartnerProductImport_PartnerImport">
-      <End Role="PartnerImport" EntitySet="PartnerImport" />
-      <End Role="PartnerProductImport" EntitySet="PartnerProductImport" />
     </AssociationSet>
     <AssociationSet Name="FK_PartnerProductImport_ProductImport" Association="Self.FK_PartnerProductImport_ProductImport">
       <End Role="ProductImport" EntitySet="ProductImport" />

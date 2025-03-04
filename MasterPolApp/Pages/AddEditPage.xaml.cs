@@ -277,6 +277,7 @@ namespace MasterPolApp.Pages
                 CurrentProduct.IdAddress = address.Id;
                 if (FlagAddOrEdit == "add")
                 {
+                    Data.DatabaseMasterPolEntities.GetContext().Address.Add(address);
                     Data.DatabaseMasterPolEntities.GetContext().PartnerImport.Add(CurrentProduct);
                     Data.DatabaseMasterPolEntities.GetContext().SaveChanges();
                     MessageBox.Show("Успешно добавлено!", "Успех!", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -288,11 +289,25 @@ namespace MasterPolApp.Pages
 
                 }
             }
+            catch (System.Data.Entity.Validation.DbEntityValidationException ex)
+            {
+                foreach (var validationErrors in ex.EntityValidationErrors)
+                {
+                    foreach (var validationError in validationErrors.ValidationErrors)
+                    {
+                        MessageBox.Show($"Ошибка в поле {validationError.PropertyName}: {validationError.ErrorMessage}");
+                    }
+                }
+            }
+            catch (System.Data.Entity.Infrastructure.DbUpdateException ex)
+            {
+                MessageBox.Show($"Ошибка обновления: {ex.InnerException?.InnerException?.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString(), "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Неизвестная ошибка: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-            }
+        }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {

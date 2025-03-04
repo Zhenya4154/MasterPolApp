@@ -14,12 +14,6 @@ namespace MasterPolApp.Data
     
     public partial class PartnerImport
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public PartnerImport()
-        {
-            this.PartnerProductImport = new HashSet<PartnerProductImport>();
-        }
-    
         public int Id { get; set; }
         public int IdTypePartner { get; set; }
         public string NamePartner { get; set; }
@@ -34,7 +28,5 @@ namespace MasterPolApp.Data
         public virtual Address Address { get; set; }
         public virtual NameDirector NameDirector { get; set; }
         public virtual TypePartner TypePartner { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PartnerProductImport> PartnerProductImport { get; set; }
     }
 }

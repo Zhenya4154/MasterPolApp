@@ -68,3 +68,5 @@ C:\Users\lisav\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Pages\AddEditPage.g.c
 C:\Users\lisav\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Pages\AddEditPage.baml
 C:\Users\zheny\OneDrive\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Pages\AddEditPage.g.cs
 C:\Users\zheny\OneDrive\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Pages\AddEditPage.baml
+C:\Users\zheny\OneDrive\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Pages\HistoryDataGridPage.g.cs
+C:\Users\zheny\OneDrive\Desktop\MasterPolApp\MasterPolApp\obj\Debug\Pages\HistoryDataGridPage.baml

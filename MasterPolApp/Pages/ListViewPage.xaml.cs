@@ -39,7 +39,7 @@ namespace MasterPolApp.Pages
 
         private void DataGridButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Classes.Manager.MainFrame.Navigate(new Pages.HistoryDataGridPage());
         }
         private void LoadData()
         {
@@ -63,8 +63,6 @@ namespace MasterPolApp.Pages
                     partner.Discount = newDiscount;
                 }
             }
-
-            context.SaveChanges();
 
             PartnerListView.ItemsSource = partners;
 
