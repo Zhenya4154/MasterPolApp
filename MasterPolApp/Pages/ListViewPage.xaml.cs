@@ -39,7 +39,11 @@ namespace MasterPolApp.Pages
 
         private void DataGridButton_Click(object sender, RoutedEventArgs e)
         {
-            Classes.Manager.MainFrame.Navigate(new Pages.HistoryDataGridPage());
+            Button button = sender as Button;
+            if (button != null && button.Tag is int partnerId)
+            {
+                Classes.Manager.MainFrame.Navigate(new Pages.HistoryDataGridPage(partnerId));
+            }
         }
         private void LoadData()
         {

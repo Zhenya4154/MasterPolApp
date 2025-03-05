@@ -3,19 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|c:\\users\\zheny\\onedrive\\desktop\\masterpolapp\\masterpolapp\\pages\\historydatagridpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|solutionrelative:pages\\historydatagridpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|c:\\users\\zheny\\onedrive\\desktop\\masterpolapp\\masterpolapp\\pages\\listviewpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|solutionrelative:pages\\listviewpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\pages\\addeditpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|solutionrelative:pages\\addeditpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|c:\\users\\zheny\\onedrive\\desktop\\masterpolapp\\masterpolapp\\pages\\historydatagridpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|c:\\users\\zheny\\onedrive\\desktop\\masterpolapp\\masterpolapp\\pages\\historydatagridpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|solutionrelative:pages\\historydatagridpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\pages\\listviewpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|solutionrelative:pages\\listviewpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|c:\\users\\zheny\\onedrive\\desktop\\masterpolapp\\masterpolapp\\pages\\listviewpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|solutionrelative:pages\\listviewpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\pages\\historydatagridpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{9D322F4B-DA07-4A04-9323-ED86B45A97D4}|MasterPolApp.csproj|solutionrelative:pages\\historydatagridpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -30,70 +34,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "ListViewPage.xaml",
+              "DocumentMoniker": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\ListViewPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\ListViewPage.xaml",
+              "ToolTip": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\ListViewPage.xaml",
+              "RelativeToolTip": "Pages\\ListViewPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-05T12:28:42.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ListViewPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\ListViewPage.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\ListViewPage.xaml.cs",
               "ToolTip": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\ListViewPage.xaml.cs",
               "RelativeToolTip": "Pages\\ListViewPage.xaml.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACkAAABPAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAADIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T15:18:26.348Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Pages\\HistoryDataGridPage.xaml.cs",
+              "DocumentIndex": 1,
+              "Title": "HistoryDataGridPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\HistoryDataGridPage.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\HistoryDataGridPage.xaml.cs",
               "ToolTip": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\HistoryDataGridPage.xaml.cs",
               "RelativeToolTip": "Pages\\HistoryDataGridPage.xaml.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB8AAAByAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAACEAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T15:00:28.905Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "AddEditPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\AddEditPage.xaml.cs",
               "RelativeDocumentMoniker": "Pages\\AddEditPage.xaml.cs",
               "ToolTip": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\AddEditPage.xaml.cs",
               "RelativeToolTip": "Pages\\AddEditPage.xaml.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAEYAAABUAAAA",
+              "ViewState": "AQIAAPUAAAAAAAAAAAAAAA4BAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-18T16:24:10.692Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "HistoryDataGridPage.xaml",
               "DocumentMoniker": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\HistoryDataGridPage.xaml",
               "RelativeDocumentMoniker": "Pages\\HistoryDataGridPage.xaml",
               "ToolTip": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\HistoryDataGridPage.xaml",
               "RelativeToolTip": "Pages\\HistoryDataGridPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-04T12:59:09.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-04T12:59:09.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AddEditPage.xaml",
               "DocumentMoniker": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\AddEditPage.xaml",
               "RelativeDocumentMoniker": "Pages\\AddEditPage.xaml",
               "ToolTip": "C:\\Users\\zheny\\OneDrive\\Desktop\\MasterPolApp\\MasterPolApp\\Pages\\AddEditPage.xaml",
               "RelativeToolTip": "Pages\\AddEditPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-18T16:24:09.06Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T16:24:09.06Z"
             }
           ]
         }

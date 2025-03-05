@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -266,6 +267,8 @@ namespace MasterPolApp.Pages
                     Data.DatabaseMasterPolEntities.GetContext().SaveChanges();
                     CurrentProduct.IdNameDirector = directorName.Id;
                 }
+                Data.DatabaseMasterPolEntities.GetContext().Address.Add(address);
+                Data.DatabaseMasterPolEntities.GetContext().SaveChanges();
 
                 CurrentProduct.Email = EmailTextBox.Text;
                 CurrentProduct.NumberPhone = NumberPhoneTextBox.Text;

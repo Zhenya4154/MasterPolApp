@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MasterPolApp.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,16 +22,17 @@ namespace MasterPolApp.Pages
     public partial class HistoryDataGridPage : Page
     {
 
-        public HistoryDataGridPage()
+        public HistoryDataGridPage(int partnerId)
         {
             InitializeComponent();
-            Init();
+            LoadSalesHistory(partnerId);
         }
 
-        private void Init()
+        private void LoadSalesHistory(int partnerId)
         {
-            SalesDataGrid.ItemsSource = Data.DatabaseMasterPolEntities.GetContext().PartnerProductImport.ToList();
-
+            SalesDataGrid.ItemsSource = Data.DatabaseMasterPolEntities.GetContext().PartnerProductImport.
+                Where(s => s.IdNamePartner == partnerId).ToList();
+           
         }
 
         private void BackButton_Click(object sender, RoutedEventArgs e)
