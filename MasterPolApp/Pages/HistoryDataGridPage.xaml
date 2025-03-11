@@ -19,7 +19,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="NameProduct" Header="Название товара" Binding="{Binding ProductImport.NameProduct}" Width="*"/>
                 <DataGridTextColumn x:Name="QuantityProduct" Header="Количество" Binding="{Binding QuantityProduct}" Width="100"/>
-                <DataGridTextColumn x:Name="DateSale" Header="Дата продажи" Binding="{Binding DateSale}" Width="150" />
+                <DataGridTextColumn x:Name="DateSale" Header="Дата продажи" Binding="{Binding DateSale, StringFormat={}{0:yyyy-MM-dd}}" Width="150" />
             </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="BackButton" Grid.Row="2" Click="BackButton_Click" Content="Назад"></Button>

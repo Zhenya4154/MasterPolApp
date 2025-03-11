@@ -29,7 +29,6 @@ namespace MasterPolApp.Data
             }
             return _context;
         }
-
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
@@ -46,7 +45,6 @@ namespace MasterPolApp.Data
         public virtual DbSet<PartnerProductImport> PartnerProductImport { get; set; }
         public virtual DbSet<ProductImport> ProductImport { get; set; }
         public virtual DbSet<ProductTypeImport> ProductTypeImport { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<TypePartner> TypePartner { get; set; }
     }
 }
