@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\comcuru\Desktop\MasterPolApp\MasterPolApp\obj\Debug\
+C:\Users\lisav\Desktop\MasterPolApp\MasterPolApp\obj\Debug\
 MasterPolApp
 none
 false
 DEBUG;TRACE
-C:\Users\comcuru\Desktop\MasterPolApp\MasterPolApp\App.xaml
+C:\Users\lisav\Desktop\MasterPolApp\MasterPolApp\App.xaml
 4765219218
 2-747231112
-24-1483751897
-18-1823224096
+251968856032
+181411199544
 MainWindow.xaml;Pages\AddEditPage.xaml;Pages\HistoryDataGridPage.xaml;Pages\ListViewPage.xaml;
 
-False
+True
 
